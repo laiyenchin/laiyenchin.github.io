@@ -2234,17 +2234,17 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				text-align: left;
 			}
 
 			#main > section.two {
 				background-color: #f5fafa;
-				text-align: left;
 
 			}
 
 			#main > section.three {
 				background-color: #ecf1f1;
+				text-align: left;
 			}
 
 			#main > section.four {

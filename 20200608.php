@@ -69,7 +69,10 @@
 								<h2>How do you think about this website?</h2>
 								 
 							</header>
-							
+							<p>test php text </p>
+							<?php
+           						 echo 'Today’s date is <b>' . date('Y/m/d') . '</b> and it’s a <b>'.date('l').'</b> today!';
+      							  ?>
 							<p style="text-align:left"> As User Experience (UX) is a part of my expertise, I would like to 
               understand how you think about my website. If you are interested, Please participante in my survey below.</p> 
 							

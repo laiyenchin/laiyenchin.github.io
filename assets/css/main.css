@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+/*@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");*/
 
 /*
 	Massively by HTML5 UP
@@ -148,10 +148,10 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
-		font-weight: 300;
+		font-family: Helvetica, serif-serif;
+		font-weight: 400;
 		font-size: 1rem;
-		line-height: 2.375;
+		line-height: 2.0;
 	}
 
 	a {
@@ -2635,6 +2635,8 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: 4rem 0;
+			padding-right: 60px;
+			padding-left: 60px;
 			width: 100%;
 		}
 
@@ -2673,7 +2675,8 @@ input, select, textarea {
 			-moz-transform: scale(1.05);
 			-webkit-transform: scale(1.05);
 			-ms-transform: scale(1.05);
-			transform: scale(1.05);
+			transform: scale(1.01);
+
 		}
 
 /* Actions */
@@ -2913,14 +2916,15 @@ input, select, textarea {
 
 		header > .date {
 			display: block;
-			font-size: 0.8rem;
+			font-size: 1.0rem;
 			height: 1;
 			margin: 0 0 1rem 0;
 			position: relative;
 		}
 
 		header > p {
-			font-style: italic;
+			font-style: normal;
+
 		}
 
 		header > h1 + p {
@@ -2947,7 +2951,7 @@ input, select, textarea {
 		header.major {
 			margin: 0 0 4rem 0;
 			text-align: center;
-		}
+		} /*about and the title of about*/
 
 			header.major > :last-child {
 				margin-bottom: 0;
@@ -2955,13 +2959,16 @@ input, select, textarea {
 
 			header.major > p {
 				margin-top: 0;
-				text-align: center;
-			}
+				padding-right: 60px;
+				padding-left: 60px;
+				text-align: left;
+				font-size: 1.2rem;
+			} /* p under about*/
 
 			header.major > .date {
-				font-size: 1rem;
+				font-size: 1.5rem;
 				margin: 0 0 4rem 0;
-			}
+			} /*about*/
 
 				header.major > .date:before, header.major > .date:after {
 					content: '';
@@ -3234,7 +3241,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/ocean.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/treebg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3258,7 +3265,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #456584; /* overlaping with bg image */
+			background: #695E39; /* overlaping with bg image */
 			content: '';
 			display: block;
 			height: 100%;
@@ -3762,6 +3769,7 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		/*here*/
 	}
 
 		#main > * {
@@ -3780,6 +3788,7 @@ input, select, textarea {
 
 		#main > .post {
 			padding: 8rem 8rem 6rem 8rem ;
+
 		}
 
 			#main > .post header.major > .date {
@@ -3791,6 +3800,12 @@ input, select, textarea {
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
 			}
+
+			#main > .post > p{
+				padding-left: 60px;
+				padding-right: 60px;
+			}
+			/* p padding in id=main, class=post*/
 
 			#main > .post.featured {
 				text-align: center;
